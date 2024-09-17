@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Resume </h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Type name"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Type Email"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree" placeholder="last degee like B.A,M.A"><br>
+            <label for="institution">Institution:</label>
+            <input type="text" id="institution" name="institution" placeholder="Name of school / University"><br>
+            <label for="year">Year of Graduation:</label>
+            <input type="number" id="year" name="year" placeholder="start and End of degree like 2001-2003"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Work Experience</legend>
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" name="jobTitle" placeholder="Title of Job"><br>
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" placeholder="Name of company"><br>
+            <label for="duration">Duration:</label>
+            <input type="text" id="duration" name="duration" placeholder="2001-2003"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <ul>
+                <input type="text" id="firstpoint" name="firstname" size="15"></li>
+                <input type="text" id="age" name="age" size="3">
+                </li>
+        </fieldset>
+
+        <button type="button" onclick="generateResume()">Generate Resume</button>
+    </form>
+
+    <div id="resumeOutput"></div>
+
+    <script src="app.ts"></script>
+</body>
+
+</html>
